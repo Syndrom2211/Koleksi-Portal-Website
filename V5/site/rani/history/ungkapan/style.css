@@ -1,0 +1,37 @@
+body{
+background-color:#00FFFF;
+background-image:url('http://4.bp.blogspot.com/_vOD1JAleemM/TRNxQMg8x9I/AAAAAAAAAEo/SzeeD364elE/s1600/lautan.jpg');
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-position:<length>;
+      background-size:cover;
+overflow-Y:auto; 
+	color:#dadada;
+	text-shadow:2px 2px 2px #000;
+	font-family:monospace;
+}
+
+.accessGranted{
+	position:fixed;
+	top:200px;
+	background:#333;
+	padding:20px;
+	border:1px solid #999;
+	width:300px;
+	left:50%;
+	margin-left:-150px;
+	text-align:center;
+}
+
+.accessDenied{
+	position:fixed;
+	top:200px;
+	color:#F00;
+	background:#511;
+	padding:20px;
+	border:1px solid #F00;
+	width:300px;
+	left:50%;
+	margin-left:-150px;
+	text-align:center;
+}

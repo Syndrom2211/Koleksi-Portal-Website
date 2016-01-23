@@ -1,0 +1,76 @@
+<?php
+	$x=0;
+	switch($x){
+	case 0: header('Location:http://127.0.0.1/noproblem.php');
+		break;
+	default: echo 'End of File';
+	}
+$database="hatimu";
+	mysql_select_db($database) or die ("Semua Telah Hilang :'( "); >
+		$whatyousay = "Tetap semangat walaupun hati sering terluka olehmu.. :D";
+echo $whatyousay;
+<?
+
+
+Please wait...............
+
+echo ON
+
+Dear Rani,
+
+Aku menjauh darimu bukan artinya aku membencimu atau sudah melupakanmu..
+Tapi itu semua karna aku sayang kepadamu,.. percayalah ok ;)
+Pasti kamu suka merasa ga enak kalo aku bertingkah aneh,
+da kamu apsti ga suka hal itu :(
+Aku ga peduli kamu mau anggap aku apa, yang penting aku bisa memberikan semua ini.,
+dan aku bakalan seneng karna aku bisa mengungkapkan nya kepadamu., walau tak langsung di hadapanmu.
+Kamu tidak senang?? dan kamu merasa tidak nyaman dengan semua ini?? ok tidak apa-apa,.
+aku tidak memikirkan hal itu.
+Maaf jika pemberian aku ini sangat sederhana yg bisa di berikan padamu.
+Karna aku hanya manusia biasa yg tidak sempurna, ;)
+
+Jangan remehkan Feeling aku, aku tau kalo kamu ingin mengatakan sesuatu kepadaku,
+dan kamu menganggap itu adalah hal yg paling tersulit bagimu. :(
+Aku ga tau apa sebenernya yg terjadi selama ini, 
+Aku begitu ingin mengetahuinya, dan pasti jika aku menanyakan hal itu,
+Kamu akan menjawab hal yg lain dengan prinsip berbeda..
+Plis lah .. ngerti. semua yg orang lain katakan kepadamu tentang aku, semua tidak benar,
+mau itu jelek atau benar,, tanyalah langsung padaku, apa yg sebenernya terjadi...
+
+Kamu ga tau ya? aku selalu lindungi kamu, bukan untuk memusuhi kamu.
+masa sahabatmu ini tega menghianatimu ;)
+tenanglah aku anggap kamu adalah wanita yg saya cintai dan saya sayangi dan selalu menemani di tiap waktu luangku :D.
+Kita sahabatan kan?? yaudah kita sahabatan kaya dulu lagi.. masih ingetkan waktu dulu kita sahabatan??
+selalu canda tawa menemani , bermain bersama... tapi sekarang semua sudah tidak ada., semua hilang
+aku ga tau apa penyebabnya, kamu ga tau bahwa permasalahan ini selalu melayang-layang di pikiranku,
+dan aku selalu mengingat waktu dulu kita senang, dan tiba" pudar .. wew semudah itu :/
+Ayolah katakan saja sejujurnya padaku, aku ga bakalan apa-apain kamu, aku juga bakalan lindungi kamu, dan bakaln jaga rahasia.
+
+Orang lain suka beranggapan bahwa aku ini jahat, tidak punya hati nurani.
+Jah.. salah besar tuh orang, sayatuh baik orangnya, kecuali kalo ada yg berbuat salah atau perbuatan fatal,
+aku baru bisa ngambek ampe ngamuk tuh.. wkwkwkw ... tenang aja ga usah takut sama aku, slow ae.
+trus waktu tadi aku liat FBmu di acak" ya??? waduh buat aku marah aja tuh >.<
+Emang kamu udah login dimana ? ga di logout ya?? untung aku udah hapus status kamu...
+Makan nya rani, inget kalo dah abis FBan mau itu di kompi atau di Hp, tetep logout,
+Udah ga aneh lagi sekarang tangan jail banyak dimana-mana. hm..
+mungkin kalo kamu beranggapan aku yg nulis statusnya??? salah rani.. buat apa aku nulis status kek gituan.
+aku kan sayang kamu, aku selalu jaga kamu,, masa aku kek gitu kek kamu,,, 
+aku janji kalo dah ketangkep yg nulis statusnya,bakalan aku BACOK ! kwkwkw
+aku juga pernah di gituin waktu itu, aku kan lagi FBan, trus aku ke belakang,, 
+eh lupa FBnya belum di logout, terus si sansan maen , jah dia nulis status macem" di FBku... -_-
+tak Getok si sansan pas waktu besok nya,, wkwkwkwk
+
+Okelah ran,, semua terserah kamu.. kamu yang menentukan, 
+kamu patut membenciku, kamu pattut juga mempercayaiku, itu terserah kamu,
+aku menyesuaikan diri saja pada pendirianku, aku jalani hidup apa adanya..
+aku ga peduli apa yg orang lain katakan kepadaku, tentang kejelkan maupun keburukan, ;)
+
+Ohh iya 1 lagi nih... tau ga??
+waktu dulu pas kamu sms " yeongwonhi chingu!!! " aku langsung down, sakit hati wkwkwk
+ta apalah itukan dulu bukan sekarang. ;)
+
+
+xD,
+Syndrom2211 a.k.a Firdam
+
+echo OFF ........

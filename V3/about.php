@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>About me</title>
+        <link rel="shortcut icon" href="img/icon.png"> 
+        <link rel="stylesheet" type="text/css" href="css/about.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/interface.js"></script>
+</head>
+<body oncontextmenu="return false;" onkeydown="return false;" onmousedown="return false;">
+    <div class="keseluruhan">
+		<div class="daleman">
+			<div class="si_penulis">
+				<h2>Whoami ?</h2>
+				<p>
+				Nama : Firdamdam.Sasmita<br/>
+				Nick*Cyber : Syndrom2211, Jenova<br/>
+				TTL : Bandung, 11-03-1996<br/>
+				Notes :<br/>
+				Pertanyaan pertama yang harus kita jawab adalah: WhoamI? Saya telah menjawab bahwa saya adalah seorang intelektual yang tidak mengejar kuasa tapi seorang yang ingin mencanangkan kebenaran. Dan saya bersedia menghadapi ketidak-populeran, karena ada suatu yang lebih besar: kebenaran... Saya adalah anak pertama dari 3 bersaudara yang Cenderung pendiam dan tidak suka berada di tempat yang ramai, tapi semua tergantung suasana hati. Dibesarkan dengan didikan yang santai dan tidak terlalu banyak aturan. Sedikit nakal dan bandel tapi tetap hidup dalam norma-norma yang ada. Saya sekolah di SMK Swasta di Bandung jurusan Rekayasa Perangkat Lunak(Software Enginering). Di sinilah saya memanfaatkan koneksi internet cuma-cuma di sela-sela waktu senggang saya. Yah, Penyimpangan pengunaan fasilitas belajar mungkin. Tapi rasa keingintahuan kadang memang sulit terkendali dan juga masalah koneksi dan fasilitas. Saya mulai mengenal internet pada tahun 2010, itulah kebodohan saya !. Ketertarikan saya dalam dunia internet sangatlah tidak stabil. Terkadang saya ingin mendalami sesuatu namun selalu kesulitan karena banyaknya pembelajaran yg harus dipelajari. Tapi semua masih bisa di siasati dengan keadaan saya sekarang. Menurut saya internet memang dunia tanpa batas, Guru dari maha guru, Tergantung bagaimana kita menyikapi apa yang kita temukan di internet Seperti istilah SEMUA ADA DI GOOGLE KECUALI TUHAN. :D
+				</p>
+			</div>
+			<div class="gambaran">
+					<img src="img/PP.jpg" width="380" height="530" />
+			</div>
+		</div>
+	</div>
+</body>
+</html>

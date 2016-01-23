@@ -1,0 +1,78 @@
+@import url('normalize.css');
+
+/* General Demo Style */
+body{
+	font-family: 'Oswald', Impact,  Arial, sans-serif;
+	background: #000 url(../images/bg.gif);
+	font-weight: 400;
+	font-size: 15px;
+	color: #fff;
+	-webkit-font-smoothing: antialiased;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	min-height: 800px;
+	cursor: url(http://cur.cursors-4u.net/nature/nat-10/nat991.cur), progress !important;
+}
+a{
+	color: #555;
+	text-decoration: none;
+	cursor: url(http://cur.cursors-4u.net/nature/nat-10/nat991.cur), progress !important;
+}
+.container{
+	width: 100%;
+	position: relative;
+
+}
+.clr{
+	clear: both;
+	padding: 0;
+	height: 0;
+	margin: 0;
+}
+.main{
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+.container > header{
+	margin: 10px;
+	padding: 30px 30px 10px 30px;
+	position: relative;
+	display: block;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    text-align: center;
+}
+.container > header h1{
+	display: block;
+	width: 347px;
+	max-width: 100%;
+	height: 197px;
+	background: transparent url(../images/headran.png) no-repeat center left;
+	text-indent: -90000px;
+	margin: 0 auto;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	background-size: 100%;
+}
+
+.flashback {
+	margin: 40px auto 0 auto;
+	width: 50%;
+	text-transform: uppercase;
+}
+
+.flashback p {
+	font-size: 30px;
+	font-weight: 300;
+	color: #FF0066;
+	text-shadow: 0 1px 1px rgba(255,255,255,0.3);
+}
+
+.flashback h2 {
+	color: #fff;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+	padding: 0;
+	margin: 0;
+	font-size: 50px;
+	font-weight: 700;
+}

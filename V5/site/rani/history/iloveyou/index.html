@@ -1,0 +1,660 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta name="description" content="Syndrom2211 a.k.a Firdam Mitulz">
+<meta name="keywords" content=" Syndrom2211 a.k.a Firdam Mitulz , Syndrom2211 , Firdam ,Firdam Mitulz ,Syndrom2211 a.k.a Firdam Mitulz , Hacker , Defacer , Cracker , Syndrom2211 , Syndrom2211 a.k.a Firdam Mitulz , Love , Syndrom Love , Firdam Love , Cinta , Heart ,">
+<script type="text/javascript">
+/************************************************************************************************************
+Show hide content with slide effect
+Copyright (C) August 2010  DTHMLGoodies.com, Alf Magne Kalleland
+
+This library is free software; you can redistribute it and/or
+modify it under the terms of the GNU Lesser General Public
+License as published by the Free Software Foundation; either
+version 2.1 of the License, or (at your option) any later version.
+
+This library is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public
+License along with this library; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+Dhtmlgoodies.com., hereby disclaims all copyright interest in this script
+written by Alf Magne Kalleland.
+
+Alf Magne Kalleland, 2010
+Owner of DHTMLgoodies.com
+
+************************************************************************************************************/
+
+var dhtmlgoodies_slideSpeed = 10;	// Higher value = faster
+var dhtmlgoodies_timer = 10;	// Lower value = faster
+
+var objectIdToSlideDown = false;
+var dhtmlgoodies_activeId = false;
+var dhtmlgoodies_slideInProgress = false;
+var dhtmlgoodies_slideInProgress = false;
+var dhtmlgoodies_expandMultiple = false; // true if you want to be able to have multiple items expanded at the same time.
+
+function showHideContent(e,inputId)
+{
+	if(dhtmlgoodies_slideInProgress)return;
+	dhtmlgoodies_slideInProgress = true;
+	if(!inputId)inputId = this.id;
+	inputId = inputId + '';
+	var numericId = inputId.replace(/[^0-9]/g,'');
+	var answerDiv = document.getElementById('dhtmlgoodies_a' + numericId);
+
+	objectIdToSlideDown = false;
+
+	if(!answerDiv.style.display || answerDiv.style.display=='none'){
+		if(dhtmlgoodies_activeId &&  dhtmlgoodies_activeId!=numericId && !dhtmlgoodies_expandMultiple){
+			objectIdToSlideDown = numericId;
+			slideContent(dhtmlgoodies_activeId,(dhtmlgoodies_slideSpeed*-1));
+		}else{
+
+			answerDiv.style.display='block';
+			answerDiv.style.visibility = 'visible';
+
+			slideContent(numericId,dhtmlgoodies_slideSpeed);
+		}
+	}else{
+		slideContent(numericId,(dhtmlgoodies_slideSpeed*-1));
+		dhtmlgoodies_activeId = false;
+	}
+}
+
+function slideContent(inputId,direction)
+{
+
+	var obj =document.getElementById('dhtmlgoodies_a' + inputId);
+	var contentObj = document.getElementById('dhtmlgoodies_ac' + inputId);
+	height = obj.clientHeight;
+	if(height==0)height = obj.offsetHeight;
+	height = height + direction;
+	rerunFunction = true;
+	if(height>contentObj.offsetHeight){
+		height = contentObj.offsetHeight;
+		rerunFunction = false;
+	}
+	if(height<=1){
+		height = 1;
+		rerunFunction = false;
+	}
+
+	obj.style.height = height + 'px';
+	var topPos = height - contentObj.offsetHeight;
+	if(topPos>0)topPos=0;
+	contentObj.style.top = topPos + 'px';
+	if(rerunFunction){
+		setTimeout('slideContent(' + inputId + ',' + direction + ')',dhtmlgoodies_timer);
+	}else{
+		if(height<=1){
+			obj.style.display='none';
+			if(objectIdToSlideDown && objectIdToSlideDown!=inputId){
+				document.getElementById('dhtmlgoodies_a' + objectIdToSlideDown).style.display='block';
+				document.getElementById('dhtmlgoodies_a' + objectIdToSlideDown).style.visibility='visible';
+				slideContent(objectIdToSlideDown,dhtmlgoodies_slideSpeed);
+			}else{
+				dhtmlgoodies_slideInProgress = false;
+			}
+		}else{
+			dhtmlgoodies_activeId = inputId;
+			dhtmlgoodies_slideInProgress = false;
+		}
+	}
+}
+
+
+
+function initShowHideDivs()
+{
+	var divs = document.getElementsByTagName('DIV');
+	var divCounter = 1;
+	for(var no=0;no<divs.length;no++){
+		if(divs[no].className=='dhtmlgoodies_question'){
+			divs[no].onclick = showHideContent;
+			divs[no].id = 'dhtmlgoodies_q'+divCounter;
+			var answer = divs[no].nextSibling;
+			while(answer && answer.tagName!='DIV'){
+				answer = answer.nextSibling;
+			}
+			answer.id = 'dhtmlgoodies_a'+divCounter;
+			contentDiv = answer.getElementsByTagName('DIV')[0];
+			contentDiv.style.top = 0 - contentDiv.offsetHeight + 'px';
+			contentDiv.className='dhtmlgoodies_answer_content';
+			contentDiv.id = 'dhtmlgoodies_ac' + divCounter;
+			answer.style.display='none';
+			answer.style.height='1px';
+			divCounter++;
+		}
+	}
+}
+window.onload = initShowHideDivs;
+</script>
+
+<link rel="SHORTCUT ICON" href="http://blog.arieflatu.net/wp-content/uploads/2010/07/love-icon.png">
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Injected Your Heart's</title>
+
+<link rel="shortcut icon" href="http://silentcontrol.co.cc/ico.png">
+ <style type="text/css"> 
+
+html, body {
+  color: white;
+  background-color: #000000;
+  background-image: url(http://images2.layoutsparks.com/1/100263/moolit-fairy-starry-sky.gif);
+  background-image: url(http://images2.layoutsparks.com/1/100263/moolit-fairy-starry-sky.gif);
+  background-attachment: scroll;
+  background-position: top center;
+  background-repeat: repeat;
+  cursor: url("http://ani.cursors-4u.net/holidays/hol-6/hol512.png"), auto;
+}
+ 
+a {
+  background-color: transparent;
+  color: #ffffff;
+}
+ 
+#p404 {
+  position: absolute;
+  top: 20%;
+  left: 0px;
+  width: 100%;
+  height: 1px;
+  overflow: visible;
+  visibility: visible;
+  display: block;
+}
+ 
+#content {
+  margin-left: -320px;
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  width: 640px;
+  height: 200px;
+  visibility: visible;
+}
+ 
+#errormessage {
+  font: 90px garamond;
+  line-height: 200%;
+  text-align: center;
+}
+ 
+#title, #footer {
+  text-align: center;
+}
+ 
+#title span {
+  background-color: #c0c0c0;
+  color: #000080;
+}
+.style1{
+	color:#dadada;
+	text-shadow:#00FFFF 0px 0px 5px;
+}
+.style2{
+	color:#dadada;
+	text-shadow:#00CED1 0px 0px 4px;
+}
+.style3{
+	color:#00FF7F;
+	text-shadow:#00BFFF 0px 0px 4px;
+}
+.style4{
+	color:#FFFFFF;
+	text-shadow:#ff0000 0px 0px 4px;
+}
+.tabel{
+	border: 1px solid #00CED1;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-box-shadow: 0 0 2px 2px #00CED1;
+	-webkit-box-shadow: 0 0 2px 2px#00CED1;
+	box-shadow: 0 0 2px 2px #00CED1;
+}
+a:link,a:visited{
+	text-decoration:none;outline:none;
+}
+a:hover{
+	color:#ffffff;text-decoration:none;outline:none;
+}
+.dhtmlgoodies_question{	/* Styling question */
+	/* Start layout CSS */
+	color:#1E90FF;
+	font-family:AR BLANCA;
+	font-size:22px;
+	background-color:transparent;
+	width:300px;
+	margin-bottom:0px;
+	margin-top:0px;
+	padding-left:100px;
+	height:25px;
+	border: 1px solid transparent;
+	box-shadow: 0 0 1px 1px #00FFFF;
+	border: 1px solid #00FFFF;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 0px;
+
+	/* End layout CSS */
+
+	overflow:hidden;
+	cursor:pointer;
+}
+.dhtmlgoodies_answer{	/* Parent box of slide down content */
+	/* Start layout CSS */
+	border: 1px solid transparent;
+	background-color:transparent;
+	width:300px;
+
+	/* End layout CSS */
+
+	visibility:hidden;
+	height:0px;
+	overflow:hidden;
+	position:absolute;
+
+}
+.dhtmlgoodies_answer_content{	/* Content that is slided down */
+	padding:1px;
+	font-size:0.9em;
+	position:absolute;
+}
+
+</style>
+
+</head><body oncontextmenu='return false;' onkeydown='return false;' onmousedown='return false;'>
+
+
+<div align="center"><table width="70%" border="0"><tbody><tr><td> 
+ 
+ 
+ 
+<style type="text/css"> 
+.snow {
+position:absolute;
+layer-background-color:white;
+visibility:visible;
+top:-50px;
+font-size:1px;
+background-color:white;
+} 
+ 
+</style> 
+ 
+ 
+
+ 
+<div class="tabel"> 
+<div class="tabel"> 
+<center><div class="style1"><b><font size="5" face="courier new"> Untukmu dan hanya untukmu </font></b></div></center>
+</div>
+ 
+ 
+ 
+
+
+
+<style>
+
+.shakeimage{
+
+position:relative
+
+}
+
+
+
+</style>
+
+
+<script language="JavaScript1.2">
+
+
+var stopit=0
+
+var rector=3 
+
+var a=1
+
+
+
+function init(which){
+
+stopit=0
+
+shake=which
+
+shake.style.left=0
+
+shake.style.top=0
+
+}
+
+
+
+function rattleimage(){
+
+if ((!document.all&&!document.getElementById)||stopit==1)
+
+return
+
+if (a==1){
+
+shake.style.top=parseInt(shake.style.top)+rector
+
+}
+
+else if (a==2){
+
+shake.style.left=parseInt(shake.style.left)+rector
+
+}
+
+else if (a==3){
+
+shake.style.top=parseInt(shake.style.top)-rector
+
+}
+
+else{
+
+shake.style.left=parseInt(shake.style.left)-rector
+
+}
+
+if (a<4)
+
+a++
+
+else
+
+a=1
+
+setTimeout("rattleimage()",50)
+
+}
+
+
+
+function stoprattle(which){
+
+stopit=1
+
+which.style.left=0
+
+which.style.top=0
+
+}
+
+
+</script>
+
+
+<script>
+/*
+An object-oriented Typing Text script, to allow for multiple instances.
+A script that causes any text inside any text element to be "typed out", one letter at a 
+
+time. Note that any HTML tags will not be included in the typed output, to prevent them 
+
+from causing problems. Tested in Firefox v1.5.0.1, Opera v8.52, Konqueror v3.5.1, and IE 
+
+v6.
+Browsers that do not support this script will simply see the text fully displayed from the 
+
+start, including any HTML tags.
+
+Functions defined:
+  TypingText(element, [interval = 100,] [cursor = "",] [finishedCallback = function()
+
+{return}]):
+    Create a new TypingText object around the given element.  Optionally
+    specify a delay between characters of interval milliseconds.
+    cursor allows users to specify some HTML to be appended to the end of
+    the string whilst typing.  Optionally, can also be a function which
+    accepts the current text as an argument.  This allows the user to
+    create a "dynamic cursor" which changes depending on the latest character
+    or the current length of the string.
+    finishedCallback allows advanced scripters to supply a function
+    to be executed on finishing.  The function must accept no arguments.
+
+  TypingText.run():
+    Run the effect.
+
+  static TypingText.runAll():
+    Run all TypingText-enabled objects on the page.
+*/
+
+TypingText = function(element, interval, cursor, finishedCallback) {
+  if((typeof document.getElementById == "undefined") || (typeof element.innerHTML == "undefined")) {
+    this.running = true;	// Never run.
+    return;
+  }
+  this.element = element;
+  this.finishedCallback = (finishedCallback ? finishedCallback : function() { return; });
+  this.interval = (typeof interval == "undefined" ? 100 : interval);
+  this.origText = this.element.innerHTML;
+  this.unparsedOrigText = this.origText;
+  this.cursor = (cursor ? cursor : "");
+  this.currentText = "";
+  this.currentChar = 0;
+  this.element.typingText = this;
+  if(this.element.id == "") this.element.id = "typingtext" + TypingText.currentIndex++;
+  TypingText.all.push(this);
+  this.running = false;
+  this.inTag = false;
+  this.tagBuffer = "";
+  this.inHTMLEntity = false;
+  this.HTMLEntityBuffer = "";
+}
+TypingText.all = new Array();
+TypingText.currentIndex = 0;
+TypingText.runAll = function() {
+  for(var i = 0; i < TypingText.all.length; i++) TypingText.all[i].run();
+}
+TypingText.prototype.run = function() {
+  if(this.running) return;
+  if(typeof this.origText == "undefined") {
+    setTimeout("document.getElementById('" + this.element.id + "').typingText.run()", this.interval);	// We haven't finished loading yet.  Have patience.
+    return;
+  }
+  if(this.currentText == "") this.element.innerHTML = "";
+//  this.origText = this.origText.replace(/<([^<])*>/, "");     // Strip HTML from text.
+  if(this.currentChar < this.origText.length) {
+    if(this.origText.charAt(this.currentChar) == "<" && !this.inTag) {
+      this.tagBuffer = "<";
+      this.inTag = true;
+      this.currentChar++;
+      this.run();
+      return;
+    } else if(this.origText.charAt(this.currentChar) == ">" && this.inTag) {
+      this.tagBuffer += ">";
+      this.inTag = false;
+      this.currentText += this.tagBuffer;
+      this.currentChar++;
+      this.run();
+      return;
+    } else if(this.inTag) {
+      this.tagBuffer += this.origText.charAt(this.currentChar);
+      this.currentChar++;
+      this.run();
+      return;
+    } else if(this.origText.charAt(this.currentChar) == "&" && !this.inHTMLEntity) {
+      this.HTMLEntityBuffer = "&";
+      this.inHTMLEntity = true;
+      this.currentChar++;
+      this.run();
+      return;
+    } else if(this.origText.charAt(this.currentChar) == ";" && this.inHTMLEntity) {
+      this.HTMLEntityBuffer += ";";
+      this.inHTMLEntity = false;
+      this.currentText += this.HTMLEntityBuffer;
+      this.currentChar++;
+      this.run();
+      return;
+    } else if(this.inHTMLEntity) {
+      this.HTMLEntityBuffer += this.origText.charAt(this.currentChar);
+      this.currentChar++;
+      this.run();
+      return;
+    } else {
+      this.currentText += this.origText.charAt(this.currentChar);
+    }
+    this.element.innerHTML = this.currentText;
+    this.element.innerHTML += (this.currentChar < this.origText.length - 1 ? (typeof this.cursor == "function" ? this.cursor(this.currentText) : this.cursor) : "");
+    this.currentChar++;
+    setTimeout("document.getElementById('" + this.element.id + "').typingText.run()", this.interval);
+  } else {
+	this.currentText = "";
+	this.currentChar = 0;
+        this.running = false;
+        this.finishedCallback();
+  }
+}
+</script>
+
+<br>
+
+
+<center><a href="http://../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../*wwwwhgsrtHAJDlkakdAHHA45ASD1FGGH1JJJJ1JHGFDD4dD4FflkakdAHHA45ASJ1DSA1kdASJ1DSA1kdAHHSA1SDaamsdD4D4FflkakdAHHA45ASJ1DSdD4FflkakdAHHA45AHHSA1SDaamsdD4dD4FflkaD4FflkakdAHHA45ASJSkdAHHA45ASJAJDSA1kSkdAHHA45ASJAJDSA1kdAHHSA1SDadAHHSA1SDa1DSkdAHHA45ASJAJDSA1kdAHHSA1SDaSkdAHHA45ASJAJDSA1kdAHHSA1SDaamsdD4dD4FF1RD4ML0V3R4N1R4M4D4N1D4FfkakdAaD4FflkakdAHHA45ASJ1DSD4FflkakdAHHASJ1DSD4FflkakdAHA45ASJ1DSD4FflkakdAHHA45ASJ1DSD4FflkakdAHHA45ASJ1DSD4FflkakdAHHA45ASJ1DSD4FflkamsdD4dD4Fflk1JHGFDSA1SDakdAHHA45ASJ.faceboook.on*com/profile.php?id=1000*0289*301*0653=../../../../../../../../../../../../../../../../../../../../../../../../../../../etc/passwd" target="_blank"><blink><img style="left: 0pt; top: 0pt;" src="http://i1058.photobucket.com/albums/t416/Syndrom2211/whois.gif" class="shakeimage" onmouseover="init(this);rattleimage()" onmouseout="stoprattle(this);top.focus()" onclick="top.focus()" alt="" width="25%" border="0" height="25%"></blink></a></center>
+<p align="center">
+<div class="dhtmlgoodies_question">Please Leave a Message =((</div>
+<div class="dhtmlgoodies_answer">
+
+	<div>
+		<ul>
+<!-- BEGIN CBOX - www.cbox.ws - v001 -->
+<div id="cboxdiv" style="text-align: left; line-height: 0">
+<div><iframe frameborder="0" width="200" height="305" src="http://www5.cbox.ws/box/?boxid=671312&amp;boxtag=14dhwq&amp;sec=main" marginheight="2" marginwidth="2" scrolling="auto" allowtransparency="yes" name="cboxmain5-671312" style="border:#48515A 1px solid;" id="cboxmain5-671312"></iframe></div>
+<div><iframe frameborder="0" width="200" height="75" src="http://www5.cbox.ws/box/?boxid=671312&amp;boxtag=14dhwq&amp;sec=form" marginheight="2" marginwidth="2" scrolling="no" allowtransparency="yes" name="cboxform5-671312" style="border:#48515A 1px solid;border-top:0px" id="cboxform5-671312"></iframe></div>
+</div>
+<!-- END CBOX -->
+		</ul>
+	</div>
+</div>
+
+</p>
+
+<br>
+
+<br>
+
+
+<div id="example1"></div>
+
+<p id="example2">
+<font color="#FF69B4" size="5" face="Chiller">Sayang Hatimu bukan Sebuah System.. =((<br>
+</font>
+<br>
+<b><b><em><font color="#87CEFA" size="4" face="Monotype Corsiva">
+Cinta nggak harus memiliki, tapi cinta memang harus di miliki..
+<br>
+
+Aku ingin kan kamu tapi kau tak menginginkan aku.. oke...
+<br>
+Aku akan cari yang bisa mengerti aku., semoga aku bisa dapet seorang cewek yang mngerti aku dan menerima ku apa ada nya..
+<br>
+karena sendirian terlalu lama nggak enak juga... :D ""Ya Rabb cinta buat diriku lemah"".
+<br>
+<br>
+
+Coba tuk bertahan, buatku rapuh, keindahannya seakan melengkapi hari-hariku hidupku galau ketika rasa cinta datang, kapan hinggap tak kenal waktu.
+<br>
+Tenangkan hatiku hamba-Mu telah dilenakan cinta berilah sandaran kepadaku,
+<br>
+Ya Rabb &.
+<br>
+Kesepian yang menyesakkan,  katamu pilu.
+<br>
+
+Jawaban atas segala pertanyaanmu tak jua ditemukan bagaikan kumbang merahasiakan makna dengungnya pada putik bunga..
+<br>
+Agar aku tak terjebak dicinta semu cinta yang akan membuat diriku semakin berkhayal..
+<br>
+
+Aku ingin kau mengerti betapa kau ku cinta, dan maaf apabila ini semua menyinggung perasaanmu,.
+<br>
+Aku hanya ingin mengungkapkan apa yang ada dalam hatiku, Mungkin ku hanya menyesal saat kau pergi
+<br>
+<br>
+
+Trasa tiada hari-hari yg bermakna tanpa hadirmu, km yang jauh ku rasakan ada di dekatku hadir lebih bermakna berarti bila ada dirimu..
+<br>
+Mengapa ku slalu mrasakan adanya dirimu disini? 
+<br>
+Seminar mentari menerangi jalan pikiranku karna trlalu menyayangi dan mencintaimu di jalanku..jalan pikirku..jalan hidupku..
+<br>
+
+Hanya tertuju untukmu, berilah jawaban atas semua karena ku slalu mrasa memilikinya walau hanya dalam dunia maya..
+<br>
+<br>
+
+Semoga dari ini kau bisa menerima cinta ku ,.
+<br>
+Aku nggak berani ngomong langsung sama kamu, takut nya kamu nngak mau nerima aku ..
+<br>
+Mohon di baca dan di mengerti, aku nggk mengharapkan tapi aku menginginkan. 
+<br>
+Walau pun kau nggk menrima kenyataan ini semua,,
+<br>
+Tapi ku harap kau menghargai nya..
+<br>
+
+<br>
+:(
+
+<br>
+Aku cba mnghapus byang" mu namun aq tak bisa ,.
+<br>
+Kau yg buat aq bhagia dan kau jga yg buat aq brsedih_
+<br>
+./Syndrom|2211
+<br>
+&#65533; untuk mu
+</font></em></b></b>  </p><center><b><b><em><font color="#ff0000" size="4" face="Monotype Corsiva"><font color="blue"><blink></blink></font></font></em></b></b></center><b><b><em><font color="#ff0000" size="4" face="Monotype Corsiva"><div class="style2"><font color="#00CED1">
+
+<p></p><br>
+
+&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;
+<br>
+<font color="#FF00FF" size="2" face="Tahoma">Hope : </font>
+
+<marquee behavior="scroll" direction="left" scrollamount="2" scrolldelay="20" width="99%">
+<font color="#ffffff" size="2" face="Tahoma">aku ingin kau mengerti 
+betapa kau ku cinta, dan maaf apabila ini semua menyinggung perasaanmu, 
+aku hanya ingin mengungkapkan apa yang ada dalam hatiku by: Firdam =)) </font>
+</marquee>
+
+&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;
+</div>
+
+
+<script type="text/javascript">
+//Define first typing example:
+new TypingText(document.getElementById("example1"));
+//Define second typing example (use "slashing" cursor at the end): 
+new TypingText(document.getElementById("example2"), 50, function(i){
+var ar = new Array("_"," ","_"," "," "); return " " + ar[i.length %
+ar.length]; });
+//Type out examples:
+TypingText.runAll();
+</script>
+
+
+<span class="style5"><center><div class="style3"><em>Can I inject your heart's to know that your heart Vulnerable?? pliiiss.. =((</em></div></center>
+
+<div class="tabel"><center><div class="style4"><font face="Courier new"><a href="http://facebook.com/Ravnui.Embassy.us" target="_blank">Syndrom2211 a.k.a Firdam Mitulz</a> <br></div></font></center><font color="red"> 
+<center><script id="_wauub0">var _wau = _wau || []; _wau.push(["classic", "l14wyljs7u8x", "ub0"]);(function() { var s=document.createElement("script"); s.async=true; s.src="http://widgets.amung.us/classic.js";document.getElementsByTagName("head")[0].appendChild(s);})();</script></center></div>
+
+<object width= "1" height="1"><object data="http://static.4shared.com/flash/player.swf?file=http://dc340.4shared.com/img/1176654238/cfbd9d1e/dlink__2Fdownload_2F86oqJ7rN_3Ftsid_3D20120305-100246-f9e5f840/preview.mp3&amp;repeat=always&amp;autostart=true" width="0" height="0" type="application/x-shockwave-flash"></object></object>
+
+</font></font></span></font></font></em></b></b></td></tr></tbody></table></div>
+</body></div></html>

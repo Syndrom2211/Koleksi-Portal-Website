@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('fonts/BebasNeue-webfont.eot');
+    src: url('fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BebasNeue-webfont.woff') format('woff'),
+         url('fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* CSS reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+html,body {
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img { 
+	border:0;
+}
+address,caption,cite,code,dfn,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;
+}
+section, header{
+	display: block;
+}
+/* General Demo Style */
+body{
+	font-family: Cambria, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+	background: #333 url(../images/bg.gif) repeat 50% 0 fixed;
+	font-weight: 400;
+	font-size: 15px;
+	color: #f0f0f0;
+	overflow-y: scroll;
+}
+a{
+	color: #ddd;
+	text-decoration: none;
+}
+a:hover{
+	color: #fff;
+}
+.container{
+	width: 100%;
+	position: relative;
+	text-align: center;
+}
+.clr{
+	clear: both;
+}
+.container > header{
+	padding: 20px 30px 10px 30px;
+	margin-bottom: 40px;
+	position: relative;
+	display: block;
+    text-align: center;
+}
+.container > header h1{
+	font-family: Goudy Old Style;
+	font-size: 35px;
+	position: relative;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: #ff0000;
+	text-shadow: #ff0000 1px 1px 1px;
+    padding: 0px 0px 5px 0px;
+}
+.container > header h1 span{
+	color: #ffffff;
+	text-shadow: 1px 1px 1px #ffffff;
+}
+.container > header h2{
+	
+}
+/* Header Style */
+@-webkit-keyframes slideOut{
+	0%{top:-30px; opacity: 0;}
+	100%{top:0px; opacity: 1;}
+}
+.syndrom-top a{
+	padding: 0px 10px;
+	letter-spacing: 1px;
+	color: #333;
+	text-shadow: 0px 1px 1px #fff;
+	display: block;
+	float: left;
+}
+.syndrom-top a:hover{
+	background: #fff;
+}
+.syndrom-top span.right{
+	float: right;
+}
+.syndrom-top span.right a{
+	float: left;
+	display: block;
+}
+.syndrom-demo{
+	text-align:center;
+	display: block;
+	padding-top: 20px;
+}
+.syndrom-demo a, 
+.syndrom-demo a.current-demo,
+.syndrom-demo a.current-demo:hover{
+    display: inline-block;
+	border: 1px solid red;
+	padding: 4px 10px 3px;
+	font-size: 13px;
+	line-height: 18px;
+	margin: 0px 3px;
+	font-weight: 800;
+	-webkit-box-shadow: 0px 1px 1px red;
+	-moz-box-shadow:0px 1px 1px red;
+	box-shadow: 0px 1px 1px red;
+	color: #000;
+	text-shadow: 1px 1px 1px red;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: #000000;
+	background: -moz-linear-gradient(top, transparent 0%, #ff0000 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#90bd9e), color-stop(100%,#72a081));
+	background: -webkit-linear-gradient(top, #90bd9e 0%,#72a081 100%);
+	background: -o-linear-gradient(top, #90bd9e 0%,#72a081 100%);
+	background: -ms-linear-gradient(top, #90bd9e 0%,#72a081 100%);
+	background: linear-gradient(top, #90bd9e 0%,#72a081 100%);
+}
+.syndrom-demo a:hover{
+	background: #85b995;
+}
+.syndrom-demo a:active{
+	-webkit-box-shadow: 0px 1px 1px rgba(255,255,255,0.4);
+	-moz-box-shadow:0px 1px 1px rgba(255,255,255,0.4);
+	box-shadow: 0px 1px 1px rgba(255,255,255,0.4);
+}
+.syndrom-demo a.current-demo,
+.syndrom-demo a.current-demo:hover{
+	color: #ffffff;
+	text-shadow: 0px 1px 1px #ff0000;
+}
+/* Media Queries */
+@media screen and (max-width: 767px) {
+	.container > header{
+		text-align: center;
+	}
+	p.codrops-demos {
+		position: relative;
+		top: auto;
+		left: auto;
+	}
+}
+/* Copyright */
+.syndrom-copyright{
+	color:#ffffff;
+	font-family:Arial;
+	font-style:italic;
+	font-size:10px;
+	text-align:right;
+}

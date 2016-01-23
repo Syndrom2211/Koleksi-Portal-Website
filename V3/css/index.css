@@ -1,0 +1,86 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	cursor:crosshair;
+	background:#000;
+	font-size:13px;
+	color:#626262;
+	padding-top:170px;
+	margin:0px auto;
+	font-family: 'Lucida Console';
+}
+a{
+	color:#626262;
+	text-decoration:none;
+	cursor:crosshair;
+}
+a:hover{
+	color:#dadada;
+	text-decoration:none;
+	cursor:crosshair;
+}
+#nav-atas{
+	background:#000;
+	font-family:Rockwell Condensed;
+	font-size:225%;
+	width:370px;
+	top:0;
+	line-height:31px;
+	padding-top:3px;
+	height:35px;
+	margin:0;
+	color:#626262;
+	border-right:1px dotted #626262;
+	border-bottom:1px dotted #626262;
+	position:absolute;
+	border-radius:0px 0px 5px 0px;
+}
+#sorot {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    pointer-events: none;
+    background: -webkit-gradient(radial, center center, 0, center center, 450, from(rgba(0,0,0,0)), to(rgba(0,0,0,1)));
+    background: -moz-radial-gradient(center 45deg, circle closest-side, transparent 0, black 280px);
+}
+#sorotan{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+	background:#000;
+	margin:0 auto 0 auto;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-user-select: none;
+}
+#naga{
+	position:absolute;
+	top:8px;
+	left:1097px;
+}
+#fire{
+	position:absolute;
+	top:70px;
+	left:-60px;
+}
+#kopiright{
+	font-family: 'PT Sans Narrow', Arial, sans-serif;
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	font-size:14px;
+	background:#000;
+	opacity:0.9;
+	height:20px;
+	padding-bottom:5px;
+	letter-spacing:1px;
+}
+#kopiright a{
+	float:right;
+	padding:5px 10px 5px;
+}

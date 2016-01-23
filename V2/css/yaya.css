@@ -1,0 +1,65 @@
+/* CSS Document */
+
+body {
+	background-color: #000;
+	color: #c0c0c0;
+	text-decoration: none;
+	font-family: "Courier New", sans-serif;
+	font-size: 13px;
+    padding: 0px;
+	margin: 0px;
+
+}
+
+p {
+	color: #c0c0c0;
+	text-decoration: none;
+	font-family: "Courier New", sans-serif;
+	font-size: 13px;
+    padding: 0px;
+	margin: 0px;
+}
+
+td {
+	padding-right: 40px;
+}
+
+input {
+	border: 1px solid #c0c0c0;
+	background-color: #000;
+	color: #ffffff;
+}
+
+a:text {
+	text-decoration: none;
+} 
+a:link {
+	text-decoration: none;
+} 
+a:visited {
+	text-decoration: none;
+} 
+a:active {
+	text-decoration: none;
+} 
+a:hover {
+	text-decoration: none;
+}
+
+.citation {
+	text-decoration: none;
+    text-align: right;
+	margin-right: 15px;
+}
+
+.align {
+	margin-left: 15px;
+}
+
+.index {
+	color: #e0e0e0;
+	text-decoration: none;
+	font-family: "Times New Roman", Georgia, Arial, sans-serif;
+	font-size: 32px;
+	margin-left: 15px;
+}

@@ -1,0 +1,255 @@
+@import url('reset.css');
+
+body{
+	background:#000;
+	color:#fff;
+	font-family: 'PT Sans Narrow', Arial, sans-serif;
+	text-transform:uppercase;
+}
+a{
+	color:#fff;
+	text-decoration:none;
+}
+a:hover{
+	color:#ff0000;
+}
+a:visited{
+	text-decoration:none;
+}
+img.drom_bg{
+	position:fixed;
+	left:0px;
+	top:0px;
+	width:100%;
+	opacity:0.8;
+	display:none;
+}
+.drom_alay{
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0px;
+	left:0px;
+	background:transparent url(../images/pattern.png) repeat top left;
+}
+.drom_lola{
+	position:fixed;
+	top:10px;
+	right:10px;
+	background:#000 url(../images/loader.gif) no-repeat center center;
+	width:50px;
+	height:50px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px 10px 10px 10px;
+	z-index:999;
+	opacity:0.7;
+	display:none;
+}
+.jeroan_syndrom{
+	position:fixed;
+	height:90px;
+	width:100%;
+	top:10%;
+	left:0px;
+	margin-top:-65px;
+}
+.jeroan_syndrom h1{
+	background:transparent;
+	display:block;
+	float:left;
+	width:90px;
+	height:50px;
+	padding:20px;
+	font-size:36px;
+	font-weight:bold;
+	line-height:20px;
+	margin-right:1px;
+}
+.jeroan_syndrom h1 span{
+	display:block;
+	font-weight:normal;
+	font-size:14px;
+}
+.struktur_syndrom{
+	background:transparent;
+	float:left;
+	position:relative;
+	height:90px;
+	width:0px; 
+}
+.struktur_syndrom > ul{
+	float:right;
+}
+.struktur_syndrom > ul > li{
+	float:left;
+	position:relative;
+	height:190px;
+	overflow:hidden;
+}
+.struktur_syndrom > ul > li a{
+	margin-top:90px;
+	opacity:0;
+	display:block;
+	height:90px;
+	padding:0px 10px;
+	text-align:center;
+	line-height:90px;
+	outline:none;
+	font-family:Sylfaen;
+	font-size:18px;
+	text-shadow: 0 0 0.2em #8B0000, 0 0 0.2em #8B0000;
+}
+.barang_syndrom{
+	width:400px;
+	height:0px; /* animate to 400px */
+	top:50%;
+	right:0px;
+	margin-top:0px; /* animate to -200px */
+	position:fixed;
+	z-index:99;
+	overflow:hidden;
+	background:transparent url(../images/bg_menu.png) repeat top left;
+}
+.barang_syndrom h2{
+	font-family:Sylfaen;
+	font-size:22px;
+	font-weight:bold;
+	color:#ff0000;
+	padding: 40px 0px 0px 40px;
+	text-shadow: 0 0 0.2em #8B0000, 0 0 0.2em #8B0000;
+}
+.barang_syndrom ul{
+	padding:0px 40px;
+}
+.barang_syndrom ul li{
+	margin:10px 0px;
+}
+.barang_syndrom ul li a{
+	font-family:Rockwell Condensed;
+	font-size:18px;
+	text-shadow: 0 0 0.2em #8B0000, 0 0 0.2em #8B0000;
+}
+.barang_syndrom ul li:first-child{
+	font-size:14px;
+	color:#fff;
+	text-transform:none;
+	border-bottom:1px dotted #333;
+	padding-bottom:15px;
+	margin-bottom:15px;
+}
+span.kloset_syndrom{
+	float:right;
+	margin:10px;
+	width:11px;
+	height:12px;
+	cursor:pointer;
+	background:transparent url(../images/close.png) no-repeat top left;
+	opacity:0.4;
+}
+span.kloset_syndrom:hover{
+	opacity:1.0;
+}
+.syndrom_cokor{
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	font-size:13px;
+	background:#000;
+	opacity:0.9;
+	height:20px;
+	padding-bottom:5px;
+}
+.syndrom_cokor a{
+	padding:5px 10px;
+	letter-spacing:1px;
+	text-shadow:1px 1px 1px #000;
+	color:#ddd;
+	float:right;
+}
+.cokor a:hover{
+	color:#fff;
+}
+.syndrom_cokor a span{
+	font-weight:bold;
+}
+.syndrom_cokor a.lengen_kenca{
+	float:left;
+}
+.aratel_bu_uk{
+	width: 201px;
+	padding-top:17%;
+	text-align: left;
+}
+.aratel_bu_uk label{
+	font-family: Sylfaen;
+	padding: 2px 19px;
+	position: relative;
+	z-index: 20;
+	display: block;
+	height: 30px;
+	cursor: pointer;
+	color: #fff;
+	text-shadow: 0 0 0.2em #8B0000, 0 0 0.2em #8B0000;
+	line-height: 33px;
+	font-size: 13px;
+	background: transparent;
+    border:1px solid #333;
+}
+.aratel_bu_uk label:hover{
+	background: #8B0000;
+}
+.aratel_bu_uk input:checked + label,
+.aratel_bu_uk input:checked + label:hover{
+	background: #8B0000;
+	color: #ffffff;
+    text-shadow: 0 0 0.2em #ff0000, 0 0 0.2em #ff0000;
+}
+.aratel_bu_uk label:hover:after,
+.aratel_bu_uk input:checked + label:hover:after{
+	content: '';
+	position: absolute;
+	width: 23px;
+	height: 24px;
+	right: 13px;
+	top: 7px;
+	background: transparent url(../images/arrow_down.png) no-repeat center center;	
+}
+.aratel_bu_uk input:checked + label:hover:after{
+	background-image: url(../images/arrow_up.png);
+}
+.aratel_bu_uk input{
+	display: none;
+}
+.aratel_bu_uk article{
+	background: transparent;
+	margin-top: -1px;
+	overflow: hidden;
+	height: 0px;
+	position: relative;
+	z-index: 10;
+	-webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+}
+.aratel_bu_uk article p{
+	color: #8B0000;
+	font-size: 14px;
+	padding-left:6px;
+	padding-top:6px;
+	border-bottom:1px solid #333;
+}
+.aratel_bu_uk input:checked ~ article{
+	-webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	-moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	-o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	-ms-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
+}
+.aratel_bu_uk input:checked ~ article.leutik{
+	height: 170px;
+}
